@@ -1,0 +1,24 @@
+/* Force the image to occupy its 50% space without stretching or overlapping */
+.about-img-fixed {
+  height: 500px; /* Adjust this to your preferred row height */
+  object-fit: cover; /* This is the secret—it crops rather than stretches */
+  object-position: center;
+  display: block;
+}
+
+/* Ensure text doesn't overflow */
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 767.98px) {
+  .about-img-fixed {
+    height: 300px; /* Shorter image on mobile */
+  }
+  .about-description {
+    font-size: 1rem;
+  }
+}
